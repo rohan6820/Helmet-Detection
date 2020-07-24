@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="about-container">
+<div class="left-box">
+    <img src="static/result.jpg">
+</div>
+<div class="right-box">
+	<h1 style="text-align: center;color"><strong>Results</strong></h1>
+	<br>
+	<span style="color:green;font-weight:bold"><h3><strong>No. of people wearing helmet</strong>: {{d[0].split("\n")[0]}}</h3></span>
+	<br>
+	<span style="color:red;font-weight:bold"><h3><strong>No. of people not wearing helmet</strong>: {{d[1]}} </h3></span>
+</div>
+</div>
+<div class="back">
+	<br>
+	<br>
+	<button class="button"><a href="/">Back</a></button>
+</div>
+
+
+{% endblock %}
